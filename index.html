@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #222;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* PAGE TITLE */
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        /* GALLERY GRID */
+        .gallery {
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <h1>Gallery</h1>
+
+    <!-- GALLERY IMAGES -->
+    <div class="gallery">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider1.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider2.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/g1.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider1.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider2.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/g1.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider1.jpg" alt="">
+        <img src="https://erfanmoheb1373-cloud.github.io/erfan/images/slider2.jpg" alt="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2024 Your Name — All Rights Reserved
+    </footer>
+
+</body>
+</html>
